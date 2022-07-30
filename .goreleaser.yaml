@@ -1,5 +1,6 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+project_name: "helm-build"
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -20,6 +21,9 @@ archives:
       amd64: x86_64
     files:
       - plugin.yaml
+    format_overrides:
+      - goos: windows
+        format: zip
 checksum:
   name_template: 'checksums.txt'
 snapshot:

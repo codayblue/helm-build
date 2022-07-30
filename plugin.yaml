@@ -1,0 +1,10 @@
+name: "build"
+version: "0.1.0"
+usage: "setup repos and download dependices"
+description: "setup repos and download dependices"
+ignoreFlags: false
+command: "$HELM_PLUGIN_DIR/helm-build"
+platformCommand:
+  - os: windows
+    arch: amd64
+    command: "$HELM_PLUGIN_DIR/helm-build.exe"
