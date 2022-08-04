@@ -21,3 +21,9 @@ While in the same directory as the helm chart run the following command
 ```bash
 helm build
 ```
+
+or you can point at a chart you want to build on the local system like so
+
+```bash
+helm build /path/to/chart
+```
